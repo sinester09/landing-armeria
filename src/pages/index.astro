@@ -1,0 +1,192 @@
+---
+import '/src/styles.css';
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/styles.css">
+
+    <title>Armería Seguridad - Equipamiento y Asesoría Legal</title>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">Armería<span>Seguridad</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Catálogo</a></li>
+                    <li><a href="#">Permisos</a></li>
+                    <li><a href="#">Asesoría</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="legal-banner">
+        La compra de armas de fuego en Perú requiere permisos legales de la SUCAMEC. Ofrecemos asesoría en todo el proceso.
+    </div>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Especialistas en Armas de Defensa Personal</h1>
+            <p>Somos expertos en equipamiento para defensa y seguridad. Te asesoramos para obtener los permisos necesarios y encontrar el arma adecuada a tus necesidades.</p>
+
+            <a href="#" class="btn">Ver Catálogo</a>
+        </div>
+    </section>
+
+    <section class="permit-section">
+        <div class="permit-content">
+            <h2 class="section-title">Asesoría en <span>Permisos Legales</span></h2>
+            <p>Te acompañamos en todo el proceso para obtener tu licencia SUCAMEC y adquirir legalmente tu arma de defensa.</p>
+            
+            <div class="permit-steps">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Evaluación Psicológica</h3>
+                    <p>Te orientamos con centros médicos autorizados para obtener tu certificado de salud mental.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Curso de Manejo de Armas</h3>
+                    <p>Impartimos cursos certificados por SUCAMEC sobre seguridad y manejo responsable.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Trámites SUCAMEC</h3>
+                    <p>Asistencia completa para obtener tu licencia de posesión y uso de armas de fuego.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3>Compra Segura</h3>
+                    <p>Una vez aprobada tu licencia, te asesoramos en la selección y compra del arma adecuada.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-section">
+        <h2 class="section-title">Pistolas <span>Destacadas</span></h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-img"><img src="public/imagenes/glock.jpg" alt="Pistola Glock 19 Gen 5" width="200"></div>
+                <div class="product-content">
+                    <h3 class="product-title">Glock 19 Gen 5</h3>
+                    <p class="product-desc">Confiabilidad y precisión para defensa personal</p>
+                    <p class="product-price">S/. 4,999.00</p>
+                    <div class="permit-badge">Requiere Licencia SUCAMEC</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img"><img src="public/imagenes/pistolas-beretta-apx.jpg" alt="Beretta APX" width="200">
+				</div>
+                <div class="product-content">
+                    <h3 class="product-title">Beretta APX</h3>
+                    <p class="product-desc">Diseño ergonómico y fácil manejo</p>
+                    <p class="product-price">S/. 5,299.00</p>
+                    <div class="permit-badge">Requiere Licencia SUCAMEC</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img"><img src="public/imagenes/smith&Wesson.jpg" alt="Smith&Wesson" width="200">
+				</div>
+                <div class="product-content">
+                    <h3 class="product-title">Smith & Wesson M&P 9</h3>
+                    <p class="product-desc">Ideal para principiantes y uso cotidiano</p>
+                    <p class="product-price">S/. 4,799.00</p>
+                    <div class="permit-badge">Requiere Licencia SUCAMEC</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img"><img src="public/imagenes/czp-10.jpg" alt="CZ P-10" width="200"></div>
+                <div class="product-content">
+                    <h3 class="product-title">CZ P-10 C</h3>
+                    <p class="product-desc">Compacta y potente para defensa personal</p>
+                    <p class="product-price">S/. 5,499.00</p>
+                    <div class="permit-badge">Requiere Licencia SUCAMEC</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories-section">
+        <h2 class="section-title">Nuestras <span>Categorías</span></h2>
+        <div class="categories-grid">
+            <div class="category-card">
+                <h3 class="category-name">Pistolas 9mm</h3>
+            </div>
+            <div class="category-card">
+                <h3 class="category-name">Accesorios Tácticos</h3>
+            </div>
+            <div class="category-card">
+                <h3 class="category-name">Fundas y Portación</h3>
+            </div>
+            <div class="category-card">
+                <h3 class="category-name">Munición</h3>
+            </div>
+            <div class="category-card">
+                <h3 class="category-name">Equipos de Limpieza</h3>
+            </div>
+            <div class="category-card">
+                <h3 class="category-name">Seguridad para el Hogar</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>¿Necesitas asesoría personalizada?</h2>
+            <p>Nuestro equipo de expertos está listo para guiarte en todo el proceso, desde la obtención de permisos hasta la selección del arma ideal para ti. Cumplimos con todas las regulaciones de SUCAMEC.</p>
+            <a href="#" class="btn btn-secondary">Agendar Cita</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Armería Seguridad</h3>
+                <p>Especialistas en armas de defensa personal con todas las certificaciones legales y autorizaciones de SUCAMEC. Más de 15 años de experiencia.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Catálogo</a></li>
+                    <li><a href="#">Trámites SUCAMEC</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Productos</h3>
+                <ul>
+                    <li><a href="#">Pistolas</a></li>
+                    <li><a href="#">Accesorios</a></li>
+                    <li><a href="#">Munición</a></li>
+                    <li><a href="#">Equipamiento</a></li>
+                    <li><a href="#">Seguridad</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contacto</h3>
+                <ul>
+                    <li>Av. Javier Prado Este 1492</li>
+                    <li>San Isidro, Lima, Perú</li>
+                    <li>Tel: (01) 422-5890</li>
+                    <li>Email: info@armeriaseguridad.com.pe</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Armería Seguridad. Todos los derechos reservados. Empresa autorizada por SUCAMEC.
+        </div>
+    </footer>
+</body>
+</html>
