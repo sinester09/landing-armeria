@@ -49,8 +49,8 @@ jobs:
       
       - name: Copy Images
         run: |
-          mkdir -p dist/imagenes
-          cp -r imagenes/* dist/imagenes/
+           mkdir -p dist/public/imagenes
+            cp -r public/imagenes/* dist/public/imagenes/
         working-directory: ${{ env.BUILD_PATH }}
       
       - name: Upload artifact
