@@ -52,6 +52,9 @@ jobs:
            mkdir -p dist/public/imagenes
             cp -r public/imagenes/* dist/public/imagenes/
         working-directory: ${{ env.BUILD_PATH }}
+
+      - name: Disable Jekyll
+        run: touch ${{ env.BUILD_PATH }}/dist/.nojekyll
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
