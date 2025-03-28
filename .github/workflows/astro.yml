@@ -53,8 +53,9 @@ jobs:
             cp -r public/imagenes/* dist/public/imagenes/
         working-directory: ${{ env.BUILD_PATH }}
 
-      - name: Disable Jekyll
-        run: touch ${{ env.BUILD_PATH }}/dist/.nojekyll
+      - name: Build with Astro
+        run: npx astro build
+        working-directory: ${{ env.BUILD_PATH }}
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
